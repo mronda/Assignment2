@@ -37,8 +37,8 @@
                 <tr ng-repeat="listing in listings | filter: query">
 					         <td ng-click="showDetails($index)"> {{listing.code}} </td>
 					         <td ng-click="showDetails($index)"> {{listing.name}} </td>
-                   <th><span class="glyphicon glyphicon-remove-circle"
-                             ng-click="deleteListing()"></span></th>
+                   <th><span class="glyphicon glyphicon-remove"
+                             ng-click="deleteListing($index)"></span></th>
                 </tr>
             </table>
           </div>
