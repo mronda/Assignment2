@@ -1,6 +1,6 @@
 body{
   font-family: sans-serif;
-  background-color: #FFFFFF;
+  background-color: #e9ece5;
 }
 
 #searchBar {
@@ -10,5 +10,9 @@ body{
 .tableWrapper {
   max-height: 400px;
   overflow: auto;
-  background-color: #7FDBFF;
+  background-color: #c0dfd9;
+}
+
+.jumbotron {
+  background-color: #c0dfd9;
 }
