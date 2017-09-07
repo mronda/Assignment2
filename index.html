@@ -44,19 +44,22 @@
           </div>
           <!--
               TODO: Write an HTML form that adds new listings to the directory
+
             -->
-        <tr>
-         <td><input class="form-control" ng-model="code"></td>
-         <td><input class="form-control" ng-model="name"></td>
-         <td><button class="btn btn-primary" ng-click="addListing()">Add Contact</button></td>
-       </tr>
+
+            <h4>Enter New Contact:</h5>
+              <tr>
+               <td><input class="form-control" ng-model="code" placeholder="code"></td>
+               <td><input class="form-control" ng-model="name" placeholder="name"></td>
+               <td><button class="btn btn-success" ng-click="addListing()">Add Contact</button></td>
+             </tr>
 
         </div>
 
 
-        <div class="col-md-6">
-          <div class="jumbotron">
-            <h2>Detailed Information</h2>
+        <div class="col-md-5">
+          <div class="jumbotron jumbotron-fluid">
+            <h2 class="h2"><strong>Detailed Information</strong></h2>
             <!--
 
               Include a way to display detailed information about an individual listing:
@@ -64,11 +67,12 @@
 
              -->
             <div ng-show="detailedInfo != undefined">
-              <h4>{{detailedInfo.code}}</h4>
-              <h4>{{detailedInfo.name}}</h4>
-              <h4>{{detailedInfo.coordinates.latitude}}</h4>
-              <h4>{{detailedInfo.coordinates.longitude}}</h4>
-              <h4>{{detailedInfo.address}}</h4>
+
+              <h4 class="lead"><strong>Code:</strong> {{detailedInfo.code}}</h4>
+              <h4 class="lead"><strong>Name:</strong> {{detailedInfo.name}}</h4>
+              <h4 class="lead"><strong>Latitude: </strong>{{detailedInfo.coordinates.latitude}}</h4>
+              <h4 class="lead"><strong>Longitude:</strong> {{detailedInfo.coordinates.longitude}}</h4>
+              <h4 class="lead"><strong>Address:</strong> {{detailedInfo.address}}</h4>
             </div>
 
 
